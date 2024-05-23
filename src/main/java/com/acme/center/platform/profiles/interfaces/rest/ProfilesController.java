@@ -8,6 +8,7 @@ import com.acme.center.platform.profiles.interfaces.rest.resources.CreateProfile
 import com.acme.center.platform.profiles.interfaces.rest.resources.ProfileResource;
 import com.acme.center.platform.profiles.interfaces.rest.transform.CreateProfileCommandFromResourceAssembler;
 import com.acme.center.platform.profiles.interfaces.rest.transform.ProfileResourceFromEntityAssembler;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(value = "/api/v1/profiles", produces = MediaType.APPLICATION_JSON_VALUE)
+@Tag(name = "Profiles", description = "Profile Management Endpoints")
 public class ProfilesController {
     private final ProfileCommandService profileCommandService;
     private final ProfileQueryService profileQueryService;
