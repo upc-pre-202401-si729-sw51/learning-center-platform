@@ -3,6 +3,10 @@
 ## Summary
 ACME Learning Center Platform, illustrating development with Java, Spring Boot Framework, and Spring Data JPA on MySQL Database. It also illustrates open-api documentation configuration and integration with Swagger UI.
 
+## OpenAPI Documentation
+The OpenAPI documentation is available at the following URL:
+```http://localhost:8080/swagger-ui.html```
+
 ### Reference Documentation
 
 For further reference, please consider the following sections:
