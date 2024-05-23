@@ -10,4 +10,5 @@ import java.util.Optional;
 @Repository
 public interface ProfileRepository extends JpaRepository<Profile, Long> {
     Optional<Profile> findByEmail(EmailAddress email);
+    boolean existsByEmail(EmailAddress email);
 }
