@@ -1,3 +1,5 @@
 package com.acme.center.platform.profiles.domain.model.queries;
 
-public record GetProfileByEmailQuery(String email) { }
+import com.acme.center.platform.profiles.domain.model.valueobjects.EmailAddress;
+
+public record GetProfileByEmailQuery(EmailAddress email) { }

@@ -32,6 +32,6 @@ public class ProfileQueryServiceImpl implements ProfileQueryService {
 
     @Override
     public Optional<Profile> handle(GetProfileByEmailQuery query) {
-        return profileRepository.findByEmail(new EmailAddress(query.email()));
+        return profileRepository.findByEmail(query.email());
     }
 }
