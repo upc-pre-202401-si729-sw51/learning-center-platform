@@ -2,6 +2,7 @@ package com.acme.center.platform.iam.domain.model.entities;
 
 import com.acme.center.platform.iam.domain.model.valueobjects.Roles;
 import jakarta.persistence.*;
+import lombok.Getter;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Getter
     @Enumerated(EnumType.STRING)
     @Column(unique = true, length = 20)
     private Roles name;
