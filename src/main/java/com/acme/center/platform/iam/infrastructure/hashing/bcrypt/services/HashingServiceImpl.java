@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 public class HashingServiceImpl implements BCryptHashingService {
     private final BCryptPasswordEncoder passwordEncoder;
 
-    public HashingServiceImpl(BCryptPasswordEncoder passwordEncoder) {
-        this.passwordEncoder = passwordEncoder;
+    public HashingServiceImpl() {
+        this.passwordEncoder = new BCryptPasswordEncoder();
     }
 
     @Override
