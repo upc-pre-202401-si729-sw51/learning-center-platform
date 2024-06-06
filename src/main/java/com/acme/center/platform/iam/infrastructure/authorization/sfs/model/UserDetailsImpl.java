@@ -41,7 +41,6 @@ public class UserDetailsImpl implements UserDetails {
                 .map(SimpleGrantedAuthority::new)
                 .toList();
         return new UserDetailsImpl(user.getUsername(), user.getPassword(), authorities);
-
     }
 
 }
